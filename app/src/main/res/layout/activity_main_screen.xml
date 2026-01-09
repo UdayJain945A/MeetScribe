@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5A96E3"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    tools:context=".screen.MainScreen"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="381dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Record, transcribe, analyze, and export  data seamlessly. Choose your action below."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStrtnew"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="START NEW"
+        android:textStyle="bold"
+        android:textColor="#5A96E3"
+        app:cornerRadius="15dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:id="@+id/btnviewsavd"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#5A96E3"
+        android:textStyle="bold"
+        android:text="VIEW SAVED"
+        app:cornerRadius="15dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#5A96E3"
+        android:id="@+id/Exportdata"
+        android:text="EXPORT DATA"
+        android:textStyle="bold"
+        app:cornerRadius="15dp">
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</LinearLayout>

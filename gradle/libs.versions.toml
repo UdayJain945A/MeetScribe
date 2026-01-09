@@ -1,0 +1,52 @@
+[versions]
+agp = "8.11.1"
+android = "0.3.38"
+arthenicaFfmpegkitFull = "6.0"
+arthenicaFfmpegKitFullVersion = "6.0-2"
+ffmpegKitFull = "4.6.LTS"
+ffmpegKitFullVersion = "5.1.LTS"
+kotlin = "2.0.21"
+coreKtx = "1.17.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+mobileFfmpegFull = "4.4"
+rangeseekbarLibrary = "0.4.0"
+googleGmsGoogleServices = "4.4.3"
+firebaseAuth = "24.0.1"
+credentials = "1.5.0"
+credentialsPlayServicesAuth = "1.5.0"
+googleid = "1.1.1"
+firebaseFirestore = "26.0.0"
+
+[libraries]
+android = { module = "org.vosk:android", version.ref = "android" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+ffmpeg-kit-full = { module = "com.arthenica:ffmpeg-kit-full", version.ref = "ffmpegKitFull" }
+ffmpeg-kit-full-v51lts = { module = "com.arthenica:ffmpeg-kit-full", version.ref = "ffmpegKitFullVersion" }
+ffmpeg-kit-full-v602 = { module = "com.arthenica:ffmpeg-kit-full", version.ref = "arthenicaFfmpegKitFullVersion" }
+ffmpegkit-full = { module = "com.arthenica:ffmpegkit-full", version.ref = "arthenicaFfmpegkitFull" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+mobile-ffmpeg-full = { module = "com.arthenica:mobile-ffmpeg-full", version.ref = "mobileFfmpegFull" }
+rangeseekbar-library = { module = "org.florescu.android.rangeseekbar:rangeseekbar-library", version.ref = "rangeseekbarLibrary" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+androidx-credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+androidx-credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
