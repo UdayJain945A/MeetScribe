@@ -13,7 +13,10 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="50dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="24dp"
         tools:context=".screen.EmailSignin">
 
         <TextView
@@ -23,73 +26,71 @@
             android:textSize="32sp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:layout_marginBottom="40dp" />
+            android:layout_marginBottom="48dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Email"
             app:boxBackgroundColor="#FFFFFF"
-            app:boxCornerRadiusBottomEnd="12dp"
-            app:boxCornerRadiusBottomStart="12dp"
-            app:boxCornerRadiusTopEnd="12dp"
-            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="#5A96E3"
+            app:boxStrokeWidth="2dp"
             app:hintTextColor="#5A96E3"
-            app:boxStrokeColor="#5A96E3">
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:textColor="#000000"
-                android:textColorHint="#808080"
-                android:padding="16dp" />
+                android:textColorHint="#A0A0A0" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="32dp"
+            android:hint="Password"
             app:boxBackgroundColor="#FFFFFF"
-            app:boxCornerRadiusBottomEnd="12dp"
-            app:boxCornerRadiusBottomStart="12dp"
-            app:boxCornerRadiusTopEnd="12dp"
-            app:boxCornerRadiusTopStart="12dp"
-            app:hintTextColor="#5A96E3"
             app:boxStrokeColor="#5A96E3"
+            app:boxStrokeWidth="2dp"
+            app:hintTextColor="#5A96E3"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="#5A96E3">
+            app:passwordToggleTint="#5A96E3"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
                 android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:textColor="#000000"
-                android:textColorHint="#808080"
-                android:padding="16dp" />
+                android:textColorHint="#A0A0A0" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="56dp"
             android:text="SIGN IN"
+            android:textColor="#5A96E3"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:elevation="4dp"
             app:backgroundTint="#FFFFFF"
-            android:textColor="#5A96E3"
-            app:cornerRadius="30dp"
-            android:elevation="4dp" />
+            app:cornerRadius="28dp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:visibility="gone" />
 
     </LinearLayout>
