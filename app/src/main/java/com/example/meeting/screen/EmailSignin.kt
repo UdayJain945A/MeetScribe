@@ -123,6 +123,5 @@ class EmailSignin : AppCompatActivity() {
         val intent = Intent(this@EmailSignin, MainScreen::class.java)
         startActivity(intent)
         finish()
-        // i am learning the git with this project
     }
 }
